@@ -1,0 +1,158 @@
+body {
+  background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  color: #fff;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  text-align: center;
+  padding: 1%;
+}
+
+/* STYLE FOR THE SCORE BOARD */
+h1 {
+  display: inline-block;
+  font-weight: 600;
+}
+
+.col-md-6 {
+  text-align: center;
+  padding: 0;
+  width: 100px;
+  margin: 15px;
+}
+
+.score-card {
+  background-color: #fff;
+  color: hsl(229, 64%, 46%);
+  font-weight: 400;
+  text-align: center;
+  border-radius: 5px;
+  width: 150px;
+  height: 150px;
+  margin-top: 10px;
+  margin-left: 300px;
+}
+
+.score-board {
+  text-align: left;
+  border: 2px solid;
+  border-radius: 15px;
+  border-color: hsl(217, 16%, 45%);
+  width: 900px;
+  margin: 0 auto;
+}
+
+/*NOW THE BUTTONS*/
+.btn-invisible {
+  visibility: hidden;
+}
+
+.btn {
+  border-radius: 350px;
+  border: 20px solid;
+  margin: 50px;
+  background-color: #fff;
+}
+
+.rock-btn {
+  border-color: hsl(349, 71%, 52%);
+  height: 100px;
+  width: 100px;
+}
+
+.rock-btn:hover {
+  background-color: hsl(349, 70%, 56%);
+}
+
+.paper-btn {
+  border-color: hsl(230, 89%, 62%);
+  height: 100px;
+  width: 100px;
+}
+
+.paper-btn:hover {
+  background-color: hsl(230, 89%, 65%);
+}
+
+.scissors-btn {
+  height: 100px;
+  width: 100px;
+  border-color: hsl(39, 89%, 49%);
+}
+
+.scissors-btn:hover {
+  background-color: hsl(40, 84%, 53%);
+}
+
+.tri-img {
+  position: absolute;
+  z-index: -1;
+  top: 350px;
+  left: 610px;
+}
+
+/* RULES */
+.input {
+  width: 100px;
+  border: 1px solid;
+  border-radius: 60px;
+  border-color: #fff;
+}
+
+.input-place {
+  background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  color: #fff;
+  position: absolute;
+  top: 700px;
+  right: 0;
+  left: 1350px;
+}
+
+/* BLURING THE BODY */
+.blur {
+  filter: blur(30px);
+  transition: 0s;
+  user-select: none;
+}
+
+#popup {
+  padding: 1%;
+  text-align: left;
+  position: fixed;
+  background-color: #fff;
+  top: 100px;
+  left: 500px;
+  width: 500px;
+  height: 500px;
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 25px;
+  z-index: +1;
+}
+
+#popup.active {
+  visibility: visible;
+  opacity: 1;
+  z-index: +1;
+}
+
+/*now the styles for the hidden area whrer it looks the page is changed */
+#buttons-alternative {
+  position: absolute;
+  visibility: hidden;
+  top: 250px;
+  left: 450px;
+}
+
+#buttons-alternative.btn-visible {
+  position: absolute;
+  visibility: visible;
+  top: 250px;
+  left: 500px;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.invisible {
+  visibility: hidden;
+}
